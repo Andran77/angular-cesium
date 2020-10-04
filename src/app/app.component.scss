@@ -1,0 +1,22 @@
+mat-grid-tile {
+    .mat-figure {
+        width: calc(100% - 10px) !important;
+        height: calc(100% - 20px) !important;
+        padding: 10px 5px !important;
+        .map {
+            display: flex;
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            border: 5px solid #314355;
+            border-radius: 20px;
+            background-color: #647687;
+            &-inner {
+                width: calc(100% - 30px);
+                left: 15px;
+                height: 100%;
+                background: white;
+                position: relative;
+            }
+        }
+    }
+}
