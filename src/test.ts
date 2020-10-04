@@ -14,6 +14,8 @@ declare const require: {
   };
 };
 
+window['CESIUM_BASE_URL'] = '/assets/cesium/';
+
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
