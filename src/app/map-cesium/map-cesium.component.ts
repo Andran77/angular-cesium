@@ -12,5 +12,4 @@ export class MapCesiumComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

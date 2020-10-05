@@ -7,5 +7,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'angular-cesium';
+  activeMap = [];
+
+  wheelMap(id) {
+    this.activeMap = [];
+    this.activeMap[id] = true;
+  }
 }
