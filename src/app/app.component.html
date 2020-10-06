@@ -3,14 +3,14 @@
         <td>
             <div class="map" [class.map-active]="activeMap[0]">
                 <div class="map-inner" (wheel)="wheelMap(0)">
-                  <app-map-cesium></app-map-cesium>
+                  <app-map-cesium [mapActive]="activeMap[0]"></app-map-cesium>
                 </div>
             </div>
         </td>
         <td>
             <div class="map" [class.map-active]="activeMap[1]">
                 <div class="map-inner" (wheel)="wheelMap(1)">
-                  <app-map-cesium></app-map-cesium>
+                  <app-map-cesium [mapActive]="activeMap[1]"></app-map-cesium>
                 </div>
             </div>
         </td>
@@ -19,14 +19,14 @@
         <td>
             <div class="map" [class.map-active]="activeMap[2]">
                 <div class="map-inner" (wheel)="wheelMap(2)">
-                  <app-map-cesium></app-map-cesium>
+                  <app-map-cesium [mapActive]="activeMap[2]"></app-map-cesium>
                 </div>
             </div>
         </td>
         <td>
             <div class="map" [class.map-active]="activeMap[3]">
                 <div class="map-inner" (wheel)="wheelMap(3)">
-                  <app-map-cesium></app-map-cesium>
+                  <app-map-cesium [mapActive]="activeMap[3]"></app-map-cesium>
                 </div>
             </div>
         </td>

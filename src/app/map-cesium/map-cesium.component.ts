@@ -1,4 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Cartesian3 } from 'cesium';
+import { MapPositionService } from '../map-position.service'
 
 @Component({
   selector: 'app-map-cesium',
@@ -8,8 +10,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class MapCesiumComponent implements OnInit {
 
-  constructor() { }
+  @Input() mapActive;
+  mapPosition: Cartesian3;
+
+  constructor(
+    private mapPositionService: MapPositionService
+  ) { }
 
   ngOnInit(): void {
+    this.mapPositionService.mapPositionSubject.subscribe(position => {
+      this.mapPosition = position;
+    })
   }
 }
